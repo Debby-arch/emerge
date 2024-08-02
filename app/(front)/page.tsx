@@ -1,9 +1,10 @@
+import Hero from "@/components/Frontend/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="text-3xl flex min-h-screen justify-center items-center">
-      <h2 className="font-semibold">Emerge</h2>
+    <section className="">
+      <Hero/>
     </section>
   );
 }
