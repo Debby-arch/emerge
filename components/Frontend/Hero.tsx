@@ -3,18 +3,21 @@ import React, { useState } from "react";
 
 const Hero = () => {
   return (
-      <div className="relative bg-white pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
+    <div className="bg-violet-400">
+      <div className="relative pb-[110px] pt-[5px] dark:bg-dark lg:pt-[50px] max-w-6xl mx-auto">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-5/12">
               <div className="hero-content">
-                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-black sm:text-[42px] lg:text-[40px] xl:text-5xl">
+                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-gray-50 dark:text-black sm:text-[42px] lg:text-[40px] xl:text-5xl">
                   Kickstart Your Mental Health Journey With Emerge
                 </h1>
-                <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
+                <p className="mb-8 max-w-[480px] text-base text-gray-100 dark:text-gray-50-6">
                 Ready to prioritize your Mental health? Emerge today.
                 Join the Emerge community and unlock a healthier you.Your path to wellness begins now. 
                 </p>
+                {/*SEARCH BAR HERE */}
+                {/*CTA BUTTONS*/}
                 <ul className="flex flex-wrap items-center">
                   <li>
                     <a
@@ -62,29 +65,6 @@ const Hero = () => {
                     </a>
                   </li>
                 </ul>
-                <div className="clients pt-16">
-                  <h6 className="mb-6 flex items-center text-xs font-normal text-body-color dark:text-dark-6">
-                    Some Of Our Clients
-                    <span className="ml-3 inline-block h-px w-8 bg-body-color"></span>
-                  </h6>
-
-                  <div className="flex items-center space-x-4">
-                    <SingleImage
-                      href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg"
-                    />
-
-                    <SingleImage
-                      href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg"
-                    />
-
-                    <SingleImage
-                      href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
             <div className="hidden px-4 lg:block lg:w-1/12"></div>
@@ -137,6 +117,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+    </div>
   );
 };
 
